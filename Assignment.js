@@ -1,8 +1,15 @@
 
 function kilometerToMeter(distance) {
-    var output = distance * 1000;
+    if(distance < 0){
+        return 'Distance cannot be negative';
+    }
+    else{
+         output = distance * 1000;
+    }
+    
     return output;
 }
+
 
 function budgetCalculator(watch, mobile, laptop) {
     var output = watch * 50 + mobile * 100 + laptop * 500;
